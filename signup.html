@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Account • DragonStone</title>
+  <link rel="stylesheet" href="css/signup.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Geist+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="page-frame">
+    <div class="signup-wrapper">
+      <!-- LEFT: glass-morphism intro -->
+      <div class="signup-left">
+        <div class="glass-card">
+          <h1 class="intro-title">Let’s Get Started</h1>
+          <p class="intro-copy">
+            Join DragonStone and explore eco-conscious living made simple.
+            Sustainable choices, stylish design — all in one place.
+          </p>
+          <div class="intro-cta">
+            <a href="#" class="btn-outline">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: compact sign-up form -->
+      <div class="signup-right">
+        <div class="form-box">
+          <h2 class="form-heading">Sign up</h2>
+
+          <form action="backend/signup.php" method="POST" class="signup-form">
+            <div class="row-2">
+              <input type="text" name="name" placeholder="First name" required />
+              <input type="text" name="surname" placeholder="Surname" required />
+            </div>
+
+            <input type="tel" name="cellphone" placeholder="Cellphone number" pattern="[0-9]{9,12}" />
+            <input type="text" name="address" placeholder="Address" />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="password" name="password" placeholder="Create Password" required />
+            <input type="password" name="repeat_password" placeholder="Confirm Password" required />
+
+            <button type="submit" class="btn-signup">Sign up</button>
+          </form>
+
+          <p class="login-text">
+            Already a member? <a href="login.html">Sign in here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
